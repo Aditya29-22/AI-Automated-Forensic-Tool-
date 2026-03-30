@@ -1,0 +1,12 @@
+2023-10-14 08:12:05 SYSTEM STARTUP: Version 4.2.1-RELEASE
+2023-10-14 08:12:07 DAEMON Service 'authd' started successfully.
+2023-10-14 08:15:33 LOGIN SUCCESS: User 'admin' from 192.168.1.45
+2023-10-14 09:22:11 WARNING File access denied: /etc/shadow by user 'guest'
+2023-10-14 10:05:00 ERROR Database connection timeout on port 5432.
+2023-10-14 10:05:05 INFO Retrying database connection...
+2023-10-14 10:05:08 INFO Database connection established.
+2023-10-14 12:44:50 LOGIN FAILED: User 'root' from 104.22.15.9 (Invalid password)
+2023-10-14 12:44:52 LOGIN FAILED: User 'root' from 104.22.15.9 (Invalid password)
+2023-10-14 12:44:55 LOGIN SUCCESS: User 'root' from 104.22.15.9
+2023-10-14 12:45:01 AUDIT: Privilege escalation detected. UID 0 session opened.
+2023-10-14 12:46:12 SYSTEM SHUTDOWN INITIATED by UID 0.
